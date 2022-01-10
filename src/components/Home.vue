@@ -23,7 +23,7 @@
         <p>v1: {{result.v1}}</p>
         <p>x2: {{result.x2}}</p>
         <p>v2: {{result.v2}}</p>
-        <p>Reults: {{result.returnVal}}</p>
+        <p>Outcome: {{result.returnVal}}</p>
       </div>
         
     </div>
@@ -40,7 +40,8 @@ export default {
       v1: null,
       x2: null,
       v2: null,
-      result: {}
+      result: [],
+      results: []
     }
   },
   methods:{
@@ -50,7 +51,8 @@ export default {
        returnVal = "YES";
          }
          this.result = {x1, v1, x2, v2, returnVal}
-         localStorage.setItem()    
+         this.results.push({x1, v1, x2, v2, returnVal})
+         localStorage.setItem('results', JSON.stringify(this.results))    
       }
     } 
 }
