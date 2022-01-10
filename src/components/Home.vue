@@ -58,58 +58,8 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
-.contain{
-  display: flex;
-  flex-direction: column;
-  .head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a{
-      padding: 75px;
-      
-    }
-  }
-  .frmctrl{
-    //width: 400px;
-    background: white;
-    padding: 20px;
-    label{
-        font-size: 16px;
-        font-weight: 600;
-        padding-right: 3px;
-    }
-    input{
-        margin: 8px;
-        height: 30px;
-        background:  rgba(158, 226, 165, 0.73);
-        border: none;
-        border-radius: 3px;
-        outline: none;
-        font-size: 16px;  
-    }
-       input[type="submit"]{
-        height: 30px;
-        width: 130px;
-        background: #1466DB;
-        border-radius: 3px;
-        color: white;
-        font-size: 16px;
-        margin-right: 10px;
-    }
-  }
-  button{
-        position: absolute;
-        right: 150px;
-        width: 88px;
-        height: 30px;
-        background: #1466DB;
-        color: white;
-        border: none;
-        border-radius: 3px;
-  }
-}
+
 
 </style>

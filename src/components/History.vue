@@ -1,10 +1,10 @@
 <template>
- <div>
-     <div>
-         <h2>History</h2>
+ <div class="contain">
+     <div class="head">
+         <h1>History</h1>
         <router-link to="/"><button>Home</button></router-link>
      </div>
-    <div>
+    <div class="tab">
         <table>
             <tr>
                 <th>X1</th>
@@ -21,13 +21,11 @@
                 <td>{{item.returnVal}}</td>
             </tr>  
         </table>
-     </div>
-     <div>
+    </div>
+    <div class="his">
         <button @click="getStorage">Refresh</button>
         <button @click="clearStorage">Reset</button> 
      </div>
-   
-
  </div>   
 </template>
 
@@ -50,10 +48,15 @@ export default {
         clearStorage(){
             localStorage.clear()
         }
+    },
+    created(){
+        this.getStorage()
     }
+    
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss"> 
+  
 
 </style>
